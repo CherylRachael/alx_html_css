@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones Landing Page</title>
+  <link rel="stylesheet" href="0-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="nav-container">
+      <img src="images/logo.png" alt="Headphones logo" class="logo">
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#">what we do</a></li>
+          <li><a href="#">our results</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+
+    <div class="hero-content">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+      <h2>Lorem ipsum dolor set amet lorem ipsum dolor set</h2>
+      <button class="cta-button">CALL TO ACTION</button>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="features-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="feature-items">
+      <div class="feature">
+        <i class="fas fa-wave-square"></i>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-film"></i>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-music"></i>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-ear-listen"></i>
+        <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
